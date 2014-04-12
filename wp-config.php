@@ -28,7 +28,7 @@ define('DB_PASSWORD', '2Ra76HPAuV23RhAj');
 define('DB_HOST', 'localhost');
 
 /** Settings for individual development servers */
-require_once(ABSPATH . 'user-settings.php');
+include_once(ABSPATH . 'user-settings.php');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
