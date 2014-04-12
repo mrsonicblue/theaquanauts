@@ -14,6 +14,9 @@
  * @package WordPress
  */
 
+/** Settings for individual development servers */
+include_once(ABSPATH . 'user-settings.php');
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'wordpress');
@@ -26,9 +29,6 @@ define('DB_PASSWORD', '2Ra76HPAuV23RhAj');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
-
-/** Settings for individual development servers */
-include_once(ABSPATH . 'user-settings.php');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
