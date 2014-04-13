@@ -28,10 +28,26 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <?php logo();?>
+        <a class="navbar-brand" title="The Aquanauts" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+			<img src="<?php echo get_template_directory_uri() ?>/assets/images/logo.png"/>
+		</a>
       </div>
 
       <div class="hidden-xs">
+		<div class="mas-banner-container">
+			<div class="mas-banner">
+				<div style="font-weight:bold; font-size:1.25em;">
+					Upcoming events
+				</div>
+				<div>
+					April 12, 2014<br/>
+					Web Challenge
+				</div>
+				<div class="join">JOIN</div>
+				<div class="give">GIVE</div>
+			</div>
+			&nbsp;
+		</div>
         <?php 
         if ( has_nav_menu( 'primary' ) ) {
           wp_nav_menu( array(

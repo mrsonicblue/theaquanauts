@@ -1,0 +1,29 @@
+.mas-banner-container{
+	position:relative;
+	float:right;
+	width:239px;
+}
+.mas-banner{
+	position:absolute;
+	width:239px;
+	background-image:url(assets/images/back_ticker.png);
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+.mas-banner  > div{
+	padding:5px;
+}
+.mas-banner > div.join{
+	height:72px;
+	background-image:url(assets/images/join_banner.png);
+	font-size:41px;
+	line-height:41px;
+	padding-top:5px;
+	color:#A9BDC7;
+}
+.mas-banner > div.give{
+	height:60px;
+	font-size:41px;
+	line-height:41px;
+}
