@@ -1,3 +1,38 @@
+.navbar .navbar-main {
+	margin-top:20px;
+	margin-right:0px;
+}
+@media(min-width:1200px){
+	.navbar .navbar-main {
+		margin-right:50px;
+	}
+}
+.navbar .navbar-main > li > a{
+	padding:60px 8px 8px 8px;
+}
+.navbar .navbar-main > li {
+	background-position: center top;
+	background-repeat: no-repeat;
+	margin-left:0px;
+}
+.navbar .navbar-main > li.menu-item-112{
+	background-image:url(assets/images/navicon_events.png);
+}
+.navbar .navbar-main > li.menu-item-113{
+	background-image:url(assets/images/navicon_explore.png);
+}
+.navbar .navbar-main > li.menu-item-114{
+	background-image:url(assets/images/navicon_members.png);
+}
+.navbar .navbar-main > li.menu-item-118{
+	background-image:url(assets/images/navicon_facilities.png);
+}
+.navbar .navbar-main > li.menu-item-119{
+	background-image:url(assets/images/navicon_about.png);
+}
+.navbar .navbar-main > li.menu-item-148{
+	background-image:url(assets/images/navicon_affiliates.png);
+}
 .mas-banner-container{
 	position:relative;
 	float:right;
@@ -20,10 +55,36 @@
 	font-size:41px;
 	line-height:41px;
 	padding-top:5px;
-	color:#A9BDC7;
+}
+.mas-banner > div.join a:link, .mas-banner > div.join a:active, .mas-banner > div.join a:visited, .mas-banner > div.join a:hover {
+	color:#708C9C;
 }
 .mas-banner > div.give{
 	height:60px;
 	font-size:41px;
 	line-height:41px;
+}
+.mas-banner > div.give a:link, .mas-banner > div.give a:active, .mas-banner > div.give a:visited, .mas-banner > div.give a:hover {
+	color:#FFFFFF;
+}
+.mas-social-container{
+	float:right;
+	width:150px;
+}
+.mas-social{
+	margin:20px 0px 0px 20px;
+}
+.mas-social > div{
+	margin-bottom:20px;
+	clear:both;
+}
+.mas-social img{
+	float:left;
+	margin-right:5px;
+}
+.mas-social span{
+	padding-top:5px;
+}
+.mas-social a:link, .mas-social a:active, .mas-social a:visited, .mas-social a:hover{
+	color:#708C9C;
 }
