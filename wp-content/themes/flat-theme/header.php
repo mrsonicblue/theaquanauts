@@ -51,8 +51,8 @@
                             }
                             ?>
                         </div>
-                        <div class="join">JOIN</div>
-                        <div class="give">GIVE</div>
+                        <div class="join"><a href="#">JOIN</a></div>
+                        <div class="give"><a href="#">GIVE</a></div>
                     </div>
                     &nbsp;
                 </div>
