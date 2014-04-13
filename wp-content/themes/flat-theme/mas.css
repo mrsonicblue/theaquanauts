@@ -23,6 +23,12 @@ body > section{
 	font-size:0.8em;
 	color:#8F8F8F;
 }
+.mas-bigsub{
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:1.2em;
+	color:#FFF;
+}
 .navbar{
 	min-height:125px;
 	margin-bottom:3px;
