@@ -257,3 +257,8 @@ body > section{
 .meetingCol {
 	padding: 8px;
 }
+.biglink, .biglink:link, .biglink:active, .biglink:visited, .biglink:hover{
+        font-size:16px;
+        color:#FFFFFF;
+        font-weight:bold;
+}
