@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php
+/**
+* Template Name: Full Width
+*/
+get_header();
+?>
             <?php /* The loop */ ?>
             <?php while ( have_posts() ) { the_post(); ?>
                 <?php edit_post_link( __( 'Edit', ZEETEXTDOMAIN ), '<small class="edit-link pull-right ">', '</small><div class="clearfix"></div>' ); ?>
