@@ -265,3 +265,11 @@ body > section{
         color:#FFFFFF;
         font-weight:bold;
 }
+
+.wpcf7 p {
+    font-size:14px;
+}
+
+.wpcf7 input[type=text] {
+    width: 100%;
+}
