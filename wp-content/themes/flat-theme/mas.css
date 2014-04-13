@@ -46,6 +46,15 @@ body > section{
 	}
 }
 
+@media screen {
+       table#starPartiesPrintFormatting {
+               display: none;
+       }
+       #spPrintTableHeader {
+               display: none;
+       }
+}
+
 @media print { 
 	.ai1ec-date-title .ai1ec-load-view, .post-edit-link, .ai1ec-date-title, .ai1ec-clearfix , p, .ai1ec-subscribe-container, #footer , 
 	.ai1ec-pull-right, h1, .breadcrumb, form, .ai1ec-event-toggle, section#title.emerald, #page, .wet-asphalt {
