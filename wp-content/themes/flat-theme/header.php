@@ -42,6 +42,7 @@
 		</div>
 		<div class="mas-banner-container hidden-sm">
 			<div class="mas-banner">
+				<?php if (is_front_page()) { ?>
 				<div style="font-weight:bold; font-size:1.25em;">
 					Upcoming events
 				</div>
@@ -49,6 +50,7 @@
 					April 12, 2014<br/>
 					Web Challenge
 				</div>
+				<?php } ?>
 				<div class="join"><a href="#">JOIN</a></div>
 				<div class="give"><a href="#">GIVE</a></div>
 			</div>
