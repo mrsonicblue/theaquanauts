@@ -1359,7 +1359,6 @@ function zee_the_attached_image() {
 }
 function remove_menus(){
   remove_menu_page( 'edit-comments.php' ); 
-  remove_menu_page( 'edit.php?post_type=zee_slider' ); 
   remove_menu_page( 'edit.php?post_type=zee_portfolio' ); 
   remove_menu_page( 'edit.php?post_type=zee_faq' ); 
   remove_menu_page( 'edit.php?post_type=zee_service' ); 

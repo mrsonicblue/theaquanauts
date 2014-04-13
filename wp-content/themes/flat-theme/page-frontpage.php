@@ -84,6 +84,8 @@ $total_sliders = count($sliders);
 
                 $background_image   =   'background-image: url('.wp_get_attachment_url($bg_image_url).')';
 
+								$bottom_right_content =  get_post_meta($slider->ID, 'wpcf-bottom-right-content', true );
+
                 $columns            =   false;
 
 
@@ -112,42 +114,29 @@ $total_sliders = count($sliders);
                 ?>
 
                 <div class="item <?php echo ($key==0) ? 'active' : '' ?>" style="<?php echo ( $bg_image_url ) ? $background_image : '' ?>">
-                    <div class="container">
-                        <div class="row">
+											<div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 col-xs-12 carousel-content-left">
+														<h2 class="<?php echo $boxed ?> animation animated-item-1">
+																<?php echo $slider->post_title ?>
+														</h2>
 
-
-                            <div class="<?php echo ($columns) ? 'col-sm-6' : 'col-sm-12'  ?>">
-                                <div class="carousel-content centered <?php echo $slider_position ?>">
-                                    <h2 class="<?php echo $boxed ?> animation animated-item-1">
-                                        <?php echo $slider->post_title ?>
-                                    </h2>
-
-                                    <p class="<?php echo $boxed ?> animation animated-item-2">
-                                        <?php echo do_shortcode( $slider->post_content ) ?>
-                                    </p>
-                                    
-                                    <?php if( $has_button ){ ?>
-                                    <br>
-                                    <a class="btn btn-md animation animated-item-3" href="<?php echo $button_url ?>"><?php echo $button ?></a>
-                                    <?php } ?>
-                                </div>
-                            </div>
-
-                            <?php if($columns){ ?>
-
-                            <div class="col-sm-6 hidden-xs animation animated-item-4">
-                                <div class="centered" style="margin-top: 129px;">
-                                    <div class="embed-container">
-                                        <?php echo $embed_code; ?>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <?php } ?>
-
-
-                        </div>
-                    </div>
+														<p class="<?php echo $boxed ?> animation animated-item-2">
+																<?php echo do_shortcode( $slider->post_content ) ?>
+														</p>
+														
+														<?php if( $has_button ){ ?>
+														<br>
+														<a class="btn btn-md animation animated-item-3" href="<?php echo $button_url ?>"><?php echo $button ?></a>
+														<?php } ?>
+											</div>
+											<div class="col-xl-4 col-lg-6 col-md-7 col-sm-6 col-xs-12 carousel-content-bottom">
+														<h2 class="<?php echo $boxed ?> animation animated-item-1">
+																<?php echo $bottom_right_content;  ?>
+														</h2>
+														<?php if( $has_button ){ ?>
+														<br>
+														<a class="btn btn-md animation animated-item-3" href="<?php echo $button_url ?>"><?php echo $button ?></a>
+														<?php } ?>
+											</div>
                 </div><!--/.item-->
 
 <!-- 
