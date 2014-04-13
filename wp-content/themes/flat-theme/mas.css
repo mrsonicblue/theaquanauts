@@ -2,10 +2,13 @@ body{
 	padding-top:128px;
 }
 body > section{
-	padding:20px 0px;
+	padding:20px 0;
 }
 #title, #bottom, .mas-blue{
 	background-color:#708C9C;
+}
+#title, #bottom, .mas-blue img{
+       margin-bottom: 0;
 }
 #footer{
 	background-color:#232324;
@@ -35,7 +38,7 @@ body > section{
 }
 .navbar .navbar-main {
 	margin-top:20px;
-	margin-right:0px;
+	margin-right:0;
 }
 @media(min-width:1200px){
 	.navbar .navbar-main {
@@ -64,17 +67,8 @@ body > section{
 	}
 }
 
-@media screen { 
-	table#starPartiesPrintFormatting {
-		display: none;
-	}
-	#spPrintTableHeader {
-		display: none;
-	}
-}
-       
 .navbar .navbar-main > li {
-	margin-left:0px;
+	margin-left:0;
 }
 .navbar .navbar-main > li > a{
 	padding:60px 8px 8px 8px;
@@ -140,6 +134,17 @@ body > section{
 .mas-banner > div.give a:link, .mas-banner > div.give a:active, .mas-banner > div.give a:visited, .mas-banner > div.give a:hover {
 	color:#FFFFFF;
 }
+
+.checkThisEvent {
+    max-width: 200px;
+    margin: auto;
+}
+
+.ai1ec-dropdown-toggle img,
+.ai1ec-load-view img {
+    display: inline;
+}
+
 .mas-banner .checkThisEvent h3{
 	font-size:16px;
     margin: 8px 0 5px;
