@@ -36,8 +36,8 @@
             <div class="hidden-xs">
                 <div class="mas-social-container hidden-sm hidden-md">
                     <div class="mas-social">
-                        <div><a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/images/twitter.png"/> <span>Twitter</span></a></div>
-                        <div><a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/images/facebook.png"/> <span>Facebook</span></a></div>
+                        <div><a href="https://twitter.com/MNAstronomy"><img src="<?php echo get_template_directory_uri() ?>/assets/images/twitter.png"/> <span>Twitter</span></a></div>
+                        <div><a href="https://www.facebook.com/MinnesotaAstronomicalSociety"><img src="<?php echo get_template_directory_uri() ?>/assets/images/facebook.png"/> <span>Facebook</span></a></div>
                     </div>
                 </div>
                 <div class="mas-banner-container hidden-sm">
