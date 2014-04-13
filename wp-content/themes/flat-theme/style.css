@@ -1781,4 +1781,6 @@ ul#menu-company-menu li:before{
 .entry-content {
 	padding: 0px 20px;
 }
-
+#header.navbar-fixed-top {
+	position: absolute;
+}
