@@ -16,6 +16,9 @@ body > section{
 .mas-grey{
 	background-color:#8F8F8F;
 }
+.mas-black{
+	background-color:#000000;
+}
 .mas-subtitle{
 	font-weight:bold;
 	text-transform:uppercase;
