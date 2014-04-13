@@ -119,3 +119,7 @@ body{
 .mas-social a:link, .mas-social a:active, .mas-social a:visited, .mas-social a:hover{
 	color:#708C9C;
 }
+.btn-danger {
+    background-color: #36444C;
+    border-color: #36444C;
+}
