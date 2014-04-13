@@ -1357,7 +1357,6 @@ function zee_the_attached_image() {
         );
 }
 }
-<<<<<<< HEAD
 function remove_menus(){
   remove_menu_page( 'edit-comments.php' ); 
   remove_menu_page( 'edit.php?post_type=zee_slider' ); 
@@ -1369,5 +1368,3 @@ function remove_menus(){
   remove_menu_page( 'edit.php?post_type=zee_testimonial' ); 
 }
 add_action( 'admin_menu', 'remove_menus' );
-=======
->>>>>>> 227905016b2587c9e60728c5c90ae147bafa98d8
