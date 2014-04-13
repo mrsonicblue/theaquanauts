@@ -1,11 +1,17 @@
 <?php
 
 // Breadcrumbs
-require_once(get_template_directory(). '/lib/breadcrumbs.php');
+//require_once(get_template_directory(). '/lib/breadcrumbs.php');
 
 global $post;
 
-if( is_single() ) {
+if ( is_singular( 'ai1ec_event' ) ) {
+
+    $title = "Event";
+
+    unset($sub_title);
+
+} elseif ( is_single() ) {
 
     $title = zee_option('zee_blog_title');
 
@@ -68,6 +74,7 @@ if( is_single() ) {
 } elseif( is_front_page() ){
 
     unset($title);
+
 }
 
 if (isset($title))
