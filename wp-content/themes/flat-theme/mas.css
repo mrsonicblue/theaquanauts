@@ -7,6 +7,9 @@ body > section{
 #title, #bottom, .mas-blue{
 	background-color:#708C9C;
 }
+#title, #bottom, .mas-blue img{
+       margin-bottom: 0;
+}
 #footer{
 	background-color:#232324;
 }
