@@ -244,3 +244,6 @@ body > section{
     background-color: #36444C;
     border-color: #36444C;
 }
+.meetingCol {
+	padding: 8px;
+}
