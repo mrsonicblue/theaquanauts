@@ -51,8 +51,8 @@
                             }
                             ?>
                         </div>
-                        <div class="join"><a href="/join/">JOIN</a></div>
-                        <div class="give">GIVE</div>
+                        <div class="join"><a href="/members/join">JOIN</a></div>
+                        <div class="give"><a href="http://givemn.razoo.com/story/Minnesota-Astronomical-Society" target="_blank">GIVE</a></div>
                     </div>
                     &nbsp;
                 </div>
