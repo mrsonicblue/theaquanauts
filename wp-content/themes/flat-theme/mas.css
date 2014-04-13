@@ -111,6 +111,7 @@ body > section{
 }
 .mas-banner .checkThisEvent h3{
 	font-size:16px;
+    margin: 8px 0 5px;
 }
 .mas-banner .checkThisEvent .ai1ec-date{
 	border: 0px solid transparent;
@@ -136,7 +137,8 @@ body > section{
 	font-size:14px;
 	color:#FFFFFF;
 }
-.mas-banner .checkThisEvent .ai1ec-weekday{
+.mas-banner .checkThisEvent .ai1ec-weekday,
+.checkThisEvent .ai1ec-event-time {
 	display:none;
 }
 .mas-banner .checkThisEvent .ai1ec-date-events{
