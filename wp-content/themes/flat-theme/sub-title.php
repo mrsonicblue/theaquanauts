@@ -70,18 +70,19 @@ if( is_single() ) {
     unset($title);
 }
 
-echo (isset($title) ? '
-
-    <section id="title" class="emerald">
+if (isset($title))
+{
+	echo ('<section id="title" class="emerald">
     <div class="container">
     <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-8">
     <h1>'.$title.'</h1>
     <p>'.$sub_title.'</p>
     </div>
-    <div class="col-sm-6">'.zee_breadcrumb().'</div>
+    <div class="col-sm-4">');
+	get_search_form();
+	echo('</div>
     </div>
     </div>
-    </section>
-
-    ' : '');
+    </section>');
+}

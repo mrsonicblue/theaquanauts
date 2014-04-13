@@ -1,3 +1,21 @@
+body{
+	padding-top:128px;
+}
+#title{
+	background-color: #708C9C;
+	padding:20px 0px;
+}
+#bottom{
+	background-color:#708C9C;
+	padding:20px 0px;
+}
+#footer{
+	background-color:#232324;
+}
+.navbar{
+	min-height:125px;
+	margin-bottom:3px;
+}
 .navbar .navbar-main {
 	margin-top:20px;
 	margin-right:0px;
@@ -31,11 +49,17 @@
 .navbar .navbar-main > li.menu-item-148 > a{
 	background:transparent url(assets/images/navicon_affiliates.png) no-repeat center top;
 }
-.navbar .navbar-main > li > a:hover{
-	background-color:#708C9C;
+.navbar .navbar-main > li > a:hover, .navbar .navbar-main > li:hover > a{
+	background-color:#4E626D;
+}
+.navbar .navbar-main > li.active > a{
+	background-color:#36444C;
+}
+.navbar .navbar-main > li.active > a, .navbar .navbar-main > li.open > a:hover, .navbar .navbar-main > li.active:hover > a{
+	background-color:#36444C;
 }
 .navbar .navbar-main .dropdown-menu > li {
-	background-color:#708C9C;
+	background-color:#4E626D;
 }
 .navbar .navbar-main .dropdown-menu > li > a {
 	color:#FFFFFF;
@@ -94,4 +118,8 @@
 }
 .mas-social a:link, .mas-social a:active, .mas-social a:visited, .mas-social a:hover{
 	color:#708C9C;
+}
+.btn-danger {
+    background-color: #36444C;
+    border-color: #36444C;
 }
