@@ -158,7 +158,8 @@ add_action('init', function() {
 
 
     $sidebars = array(
-        'home_page_event_view' => ('Home Page Event View')
+        'home_page_event_view' => ('Home Page Event View'),
+        'star_party_event_view' => ('Star Party Event View')
     );
 
     foreach ($sidebars as $key => $value) {
@@ -174,6 +175,19 @@ add_action('init', function() {
     }
 });
 
+function star_party_func( $atts ){
+    $back =  '<div class="upcoming-star-party">';
+    ob_start();
+    if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("star_party_event_view") ) :
+        dynamic_sidebar( "star_party_event_view" );
+    endif;
+    $back .= ob_get_contents();
+    ob_end_clean();
+    $back .= '</div>';
+    return $back;
+}
+
+add_shortcode( 'star_party', 'star_party_func' );
 
 // add shortcode tinymce button
 add_filter('mce_buttons', function ($mce_buttons) {
