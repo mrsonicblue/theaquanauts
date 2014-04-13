@@ -6,6 +6,10 @@ body > section{
 }
 #title, #bottom, .mas-blue{
     background-color:#708C9C;
+	padding:20px 0;
+}
+#title, #bottom, .mas-blue{
+	background-color:#708C9C;
 }
 #footer{
     background-color:#232324;
@@ -22,6 +26,19 @@ body > section{
     text-transform:uppercase;
     font-size:0.8em;
     color:#8F8F8F;
+}
+.mas-grey{
+	background-color:#8F8F8F;
+}
+.mas-subtitle{
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.mas-subsubtitle{
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:0.8em;
+	color:#8F8F8F;
 }
 .navbar{
     min-height:125px;
@@ -159,6 +176,34 @@ body > section{
 }
 .mas-merch a:link, .mas-merch a:active, .mas-merch a:visited, .mas-merch a:hover{
     color:#FFFFFF;
+}
+.mas-social-front{
+	margin-top:20px;
+}
+.mas-social-front > div{
+	margin-bottom:20px;
+	clear:both;
+}
+.mas-social-front img{
+	display:inline;
+	margin-right:5px;
+	vertical-align:baseline;
+}
+.mas-social-front span{
+}
+.mas-social-front a:link, .mas-social-front a:active, .mas-social-front a:visited, .mas-social-front a:hover{
+	color:#FFFFFF;
+}
+.mas-merch span{
+	margin-right:5px;
+	padding-top:50px;
+}
+.mas-merch img{
+	display:inline;
+	vertical-align:middle;
+}
+.mas-merch a:link, .mas-merch a:active, .mas-merch a:visited, .mas-merch a:hover{
+	color:#FFFFFF;
 }
 .btn-danger {
     background-color: #36444C;
