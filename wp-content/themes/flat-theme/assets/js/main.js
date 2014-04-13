@@ -1,8 +1,10 @@
 jQuery(function($) {
 
 	//#main-slider
-	$('#main-slider .carousel').carousel({
-		interval: 8000
+	$(function(){
+		$('#main-slider.carousel').carousel({
+			interval: 8000
+		});
 	});
 
 	$( '.centered' ).each(function( e ) {
@@ -59,7 +61,7 @@ jQuery(function($) {
 	
 	$(function () {
 		var events = $('.ai1ec-event');
-		var lineHtml = '<div id="spPrintTableHeader">Star Party Schedule</div><br />';	
+		var lineHtml = '<div id="spPrintTableHeader">Star Party Schedule</div>';	
 		lineHtml += '<table id="starPartiesPrintFormatting">';	
 		for (var i = 0; i < events.length; i++) {
 			lineHtml += '<tr class="starPartyLine">';
