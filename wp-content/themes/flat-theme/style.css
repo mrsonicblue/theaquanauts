@@ -1742,3 +1742,32 @@ ul#menu-company-menu li:before{
   font-family: FontAwesome;
   margin-right: 5px;
 }
+.pricing-table th:nth-of-type(1) {
+    width: 75%; 
+		font-size: 150%;
+}
+.pricing-table th:nth-of-type(2) {
+    width: 25%;
+}
+.pricing-table th:nth-of-type(3) {
+    width: 25%; 
+}
+.pricing-table tr {
+	border: none;
+}
+.pricing-table tr td:nth-of-type(2) {
+    text-align: right;
+    padding-right: 20px;
+    font-size: 150%;
+}
+.pricing-table tr.content_row td {
+	padding: 0px 70px 0px 20px;
+	text-align: justify;
+}
+.pricing-table td.title {
+	font-size: 150%;
+}
+.pricing-table .paypal_button input[type="image"] {
+	width: 200px;
+	vertical-align: bottom;
+}
