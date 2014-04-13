@@ -37,11 +37,13 @@
                 <div class="mas-banner-container">
                     <div class="mas-banner">
                         <div class="checkThisEvent">
-                            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("home_page_event_view") ) : ?>
-
-                                <?php dynamic_sidebar( "home_page_event_view" ); ?>
-
-                            <?php endif; ?>
+                            <?php
+                            if (is_front_page()) {
+                                if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("home_page_event_view") ) :
+                                    dynamic_sidebar( "home_page_event_view" );
+                                endif;
+                            }
+                            ?>
                         </div>
                         <div class="join">JOIN</div>
                         <div class="give">GIVE</div>
