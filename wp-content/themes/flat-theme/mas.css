@@ -1,0 +1,125 @@
+body{
+	padding-top:128px;
+}
+#title{
+	background-color: #708C9C;
+	padding:20px 0px;
+}
+#bottom{
+	background-color:#708C9C;
+	padding:20px 0px;
+}
+#footer{
+	background-color:#232324;
+}
+.navbar{
+	min-height:125px;
+	margin-bottom:3px;
+}
+.navbar .navbar-main {
+	margin-top:20px;
+	margin-right:0px;
+}
+@media(min-width:1200px){
+	.navbar .navbar-main {
+		margin-right:50px;
+	}
+}
+.navbar .navbar-main > li {
+	margin-left:0px;
+}
+.navbar .navbar-main > li > a{
+	padding:60px 8px 8px 8px;
+}
+.navbar .navbar-main > li.menu-item-112 > a{
+	background:transparent url(assets/images/navicon_events.png) no-repeat center top;
+}
+.navbar .navbar-main > li.menu-item-113 > a{
+	background:transparent url(assets/images/navicon_explore.png) no-repeat center top;
+}
+.navbar .navbar-main > li.menu-item-114 > a{
+	background:transparent url(assets/images/navicon_members.png) no-repeat center top;
+}
+.navbar .navbar-main > li.menu-item-118 > a{
+	background:transparent url(assets/images/navicon_facilities.png) no-repeat center top;
+}
+.navbar .navbar-main > li.menu-item-119 > a{
+	background:transparent url(assets/images/navicon_about.png) no-repeat center top;
+}
+.navbar .navbar-main > li.menu-item-148 > a{
+	background:transparent url(assets/images/navicon_affiliates.png) no-repeat center top;
+}
+.navbar .navbar-main > li > a:hover, .navbar .navbar-main > li:hover > a{
+	background-color:#4E626D;
+}
+.navbar .navbar-main > li.active > a{
+	background-color:#36444C;
+}
+.navbar .navbar-main > li.active > a, .navbar .navbar-main > li.open > a:hover, .navbar .navbar-main > li.active:hover > a{
+	background-color:#36444C;
+}
+.navbar .navbar-main .dropdown-menu > li {
+	background-color:#4E626D;
+}
+.navbar .navbar-main .dropdown-menu > li > a {
+	color:#FFFFFF;
+}
+.mas-banner-container{
+	position:relative;
+	float:right;
+	width:239px;
+}
+.mas-banner{
+	position:absolute;
+	width:239px;
+	background-image:url(assets/images/back_ticker.png);
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+.mas-banner  > div{
+	padding:5px;
+}
+.mas-banner > div.join{
+	height:72px;
+	background-image:url(assets/images/join_banner.png);
+	font-size:41px;
+	line-height:41px;
+	padding-top:5px;
+}
+.mas-banner > div.join a:link, .mas-banner > div.join a:active, .mas-banner > div.join a:visited, .mas-banner > div.join a:hover {
+	color:#708C9C;
+}
+.mas-banner > div.give{
+	height:60px;
+	font-size:41px;
+	line-height:41px;
+}
+.mas-banner > div.give a:link, .mas-banner > div.give a:active, .mas-banner > div.give a:visited, .mas-banner > div.give a:hover {
+	color:#FFFFFF;
+}
+.mas-social-container{
+	float:right;
+	width:150px;
+}
+.mas-social{
+	margin:20px 0px 0px 20px;
+}
+.mas-social > div{
+	margin-bottom:20px;
+	clear:both;
+}
+.mas-social img{
+	float:left;
+	margin-right:5px;
+}
+.mas-social span{
+	padding-top:5px;
+}
+.mas-social a:link, .mas-social a:active, .mas-social a:visited, .mas-social a:hover{
+	color:#708C9C;
+}
+.btn-danger {
+    background-color: #36444C;
+    border-color: #36444C;
+}

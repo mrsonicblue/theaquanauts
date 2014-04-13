@@ -150,6 +150,30 @@ add_filter( 'wp_title', function( $title, $sep ) {
 }, 10, 2 );
 
 
+/**
+ * MENU AND SIDEBAR REGISTRATION
+ */
+
+add_action('init', function() {
+
+
+    $sidebars = array(
+        'home_page_event_view' => ('Home Page Event View')
+    );
+
+    foreach ($sidebars as $key => $value) {
+        register_sidebar(array(
+                'name' => $value,
+                'id' => $key,
+                'before_widget' => '<div id="%1$s" class="widget %2$s">',
+                'after_widget' => '</div>',
+                'before_title' => '<h3 class="widget-title">',
+                'after_title' => '</h3>'
+            )
+        );
+    }
+});
+
 
 // add shortcode tinymce button
 add_filter('mce_buttons', function ($mce_buttons) {
@@ -193,6 +217,7 @@ if( ! function_exists('zee_scripts') ){
         wp_enqueue_style('animate',         get_template_directory_uri() . '/assets/css/animate.css');
         wp_enqueue_style('fontawesome',     get_template_directory_uri() . '/assets/css/font-awesome.min.css');    
         wp_enqueue_style('style',           get_template_directory_uri() . '/style.css');
+        wp_enqueue_style('mas',             get_template_directory_uri() . '/mas.css');
     // Inline css
         wp_add_inline_style( 'style',       zee_style_options() );
     }
@@ -1332,6 +1357,7 @@ function zee_the_attached_image() {
         );
 }
 }
+<<<<<<< HEAD
 function remove_menus(){
   remove_menu_page( 'edit-comments.php' ); 
   remove_menu_page( 'edit.php?post_type=zee_slider' ); 
@@ -1343,3 +1369,5 @@ function remove_menus(){
   remove_menu_page( 'edit.php?post_type=zee_testimonial' ); 
 }
 add_action( 'admin_menu', 'remove_menus' );
+=======
+>>>>>>> 227905016b2587c9e60728c5c90ae147bafa98d8
