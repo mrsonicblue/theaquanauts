@@ -203,6 +203,25 @@ $total_sliders = count($sliders);
             <i class="icon-angle-right"></i>
         </a>
     </section>
+	
+	<section class="mas-grey" style="margin:3px 0px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 text-center">
+					<div class="mas-social-front">
+						<div><a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/images/twitter.png"/> <span>Twitter</span></a></div>
+						<div><a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/images/facebook.png"/> <span>Facebook</span></a></div>
+					</div>
+				</div>
+				<div class="col-sm-4"><div style="margin-top:40px;"><?php echo get_search_form(); ?></div></div>
+				<div class="col-sm-4 text-center">
+					<div class="mas-merch">
+						<div><a href="#"><span>Merchandise</span> <img src="<?php echo get_template_directory_uri() ?>/assets/images/merch.png"/></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
     <?php the_post(); ?>
     <?php the_content(); ?>
