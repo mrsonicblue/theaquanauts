@@ -150,6 +150,30 @@ add_filter( 'wp_title', function( $title, $sep ) {
 }, 10, 2 );
 
 
+/**
+ * MENU AND SIDEBAR REGISTRATION
+ */
+
+add_action('init', function() {
+
+
+    $sidebars = array(
+        'home_page_event_view' => ('Home Page Event View')
+    );
+
+    foreach ($sidebars as $key => $value) {
+        register_sidebar(array(
+                'name' => $value,
+                'id' => $key,
+                'before_widget' => '<div id="%1$s" class="widget %2$s">',
+                'after_widget' => '</div>',
+                'before_title' => '<h3 class="widget-title">',
+                'after_title' => '</h3>'
+            )
+        );
+    }
+});
+
 
 // add shortcode tinymce button
 add_filter('mce_buttons', function ($mce_buttons) {
@@ -1333,4 +1357,3 @@ function zee_the_attached_image() {
         );
 }
 }
-
