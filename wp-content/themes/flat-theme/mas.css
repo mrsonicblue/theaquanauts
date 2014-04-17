@@ -406,3 +406,7 @@ body > section {
 .wpcf7 input[type=text] {
     width: 100%;
 }
+.observatoryMap {
+    float: right;
+    padding: 0 0 15px 10px;
+}
