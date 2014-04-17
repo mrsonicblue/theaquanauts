@@ -1,3 +1,0 @@
-[submodule "app/controller/extension"]
-	path = app/controller/extension
-	url = git@github.com:thenly/all-in-one-event-calendar-extensions-library.git
