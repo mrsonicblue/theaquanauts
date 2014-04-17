@@ -158,7 +158,9 @@ add_action('init', function() {
 
 
     $sidebars = array(
-        'home_page_event_view' => ('Home Page Event View')
+        'home_page_event_view' => ('Home Page Event View'),
+        'star_party_event_view' => ('Star Party Event View'),
+        'monthly_event_event_view' => ('Monthly Event Event View')
     );
 
     foreach ($sidebars as $key => $value) {
@@ -174,6 +176,33 @@ add_action('init', function() {
     }
 });
 
+function star_party_func( $atts ){
+    $back =  '<div class="upcoming-star-party">';
+    ob_start();
+    if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("star_party_event_view") ) :
+        dynamic_sidebar( "star_party_event_view" );
+    endif;
+    $back .= ob_get_contents();
+    ob_end_clean();
+    $back .= '</div>';
+    return $back;
+}
+
+add_shortcode( 'star_party', 'star_party_func' );
+
+function monthly_event_func( $atts ){
+    $back =  '<div class="upcoming-monthly-event">';
+    ob_start();
+    if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("monthly_event_event_view") ) :
+        dynamic_sidebar( "monthly_event_event_view" );
+    endif;
+    $back .= ob_get_contents();
+    ob_end_clean();
+    $back .= '</div>';
+    return $back;
+}
+
+add_shortcode( 'monthly_event', 'monthly_event_func' );
 
 // add shortcode tinymce button
 add_filter('mce_buttons', function ($mce_buttons) {
@@ -1359,7 +1388,6 @@ function zee_the_attached_image() {
 }
 function remove_menus(){
   remove_menu_page( 'edit-comments.php' ); 
-  remove_menu_page( 'edit.php?post_type=zee_slider' ); 
   remove_menu_page( 'edit.php?post_type=zee_portfolio' ); 
   remove_menu_page( 'edit.php?post_type=zee_faq' ); 
   remove_menu_page( 'edit.php?post_type=zee_service' ); 

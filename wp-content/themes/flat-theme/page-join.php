@@ -109,8 +109,13 @@ get_header(); ?>
 				</form>
 				<br style="clear: both;" />
 				<div class="col-xs-12 col-sm-10"></div>
-				<div class="paypal_button col-xs-12 col-sm-2" style="text-align: right;">
-					<input type="submit" src="https://www.paypal.com/en_US/i/btn/view_cart.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!" width="130" height="32" value="View Cart">
+				<div class="paypal_button col-xs-12 col-sm-2">
+					<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+						<input type="hidden" name="business" value="treasurer@mnastro.org">
+						<input type="hidden" name="cmd" value="_cart">
+						<input type="hidden" name="display" value="1">
+						<input type="submit" src="https://www.paypal.com/en_US/i/btn/view_cart.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!" width="130" height="32" value="View Cart">
+					</form>
 				</div>
 				</div>
 		</div>

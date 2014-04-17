@@ -1781,4 +1781,33 @@ ul#menu-company-menu li:before{
 .entry-content {
 	padding: 0px 20px;
 }
-
+#header.navbar-fixed-top {
+	position: absolute;
+}
+.carousel-content-left {
+	background: rgba(255,255,255,0.7);
+	padding-left: 5%;
+margin-top: 10px;
+border-radius: 0px 10px 10px 0px;
+padding-bottom: 10px;
+	font-weight: bold;
+	font-size: 12pt;
+}
+.carousel-content-left h2, .carousel-content-bottom h2, .carousel-content-left p, .carousel-content-bottom p, .carousel-content-left a, .carousel-content-bottom a {
+	color: black;
+}
+.carousel-content-bottom {
+	background: rgba(255,255,255,0.7);
+	border-radius: 10px 0px 0px 10px;
+	margin-bottom: 10px;
+	color: black;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+.carousel-indicators {
+	bottom: auto;
+	top: 20px;
+}

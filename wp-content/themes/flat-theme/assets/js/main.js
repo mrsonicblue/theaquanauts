@@ -58,4 +58,19 @@ jQuery(function($) {
 	$("a[rel^='prettyPhoto']").prettyPhoto({
 		social_tools: false
 	});	
+	
+	$(function () {
+		var events = $('.ai1ec-event');
+		var lineHtml = '<div id="spPrintTableHeader">Star Party Schedule</div>';	
+		lineHtml += '<table id="starPartiesPrintFormatting">';	
+		for (var i = 0; i < events.length; i++) {
+			lineHtml += '<tr class="starPartyLine">';
+			var spEventTitle = $(events[i]).find("[class='ai1ec-event-title']").html();
+			var spEventTime = $(events[i]).find("[class='ai1ec-event-time']").html();
+			lineHtml += '<td>' + spEventTitle + '</td>' + '<td>' + spEventTime + '</td>';
+			lineHtml += '</tr>';
+		}
+		lineHtml += '</table>';
+		$('body').append(lineHtml);
+	});
 });
