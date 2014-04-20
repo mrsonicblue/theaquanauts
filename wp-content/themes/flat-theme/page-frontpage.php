@@ -213,7 +213,28 @@ $total_sliders = count($sliders);
 	</section>
 
     <?php the_post(); ?>
-    <?php the_content(); ?>
+<section id="page">
+    <div class="container">
+        <div id="content" class="site-content" role="main">
+            <?php /* The loop */ ?>
+						<?php the_content(); 
+						$query = new WP_Query( array( 
+							'post-type' => 'post',
+							'category' => 'uncategorized'
+						));?>
+            <?php while ( $query->have_posts() ) { $query->the_post();  ?>
+							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+									<div class="entry-content">
+										<a href="<?php the_permalink(); ?>"><h2 class="entry-title"><?php the_title(); ?></h2></a>
+										<?php the_excerpt(); ?>
+									</div>
+									<br style="clear: both" />
+							</article>
+            <?php } ?>
+        </div><!--/#content-->
+    </div>
+</section><!--/#page-->
+    <?php //the_content(); ?>
 
     <?php
     get_footer();
