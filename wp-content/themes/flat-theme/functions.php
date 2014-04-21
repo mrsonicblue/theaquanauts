@@ -1396,3 +1396,9 @@ function remove_menus(){
   remove_menu_page( 'edit.php?post_type=zee_testimonial' ); 
 }
 add_action( 'admin_menu', 'remove_menus' );
+
+function my_nav_notitle( $menu ){
+  return $menu = preg_replace('/ title=\"(.*?)\"/', '', $menu );
+}
+add_filter( 'wp_page_menu', 'my_nav_notitle' );
+add_filter( 'wp_nav_menu', 'my_nav_notitle' );
