@@ -1402,3 +1402,23 @@ function my_nav_notitle( $menu ){
 }
 add_filter( 'wp_page_menu', 'my_nav_notitle' );
 add_filter( 'wp_nav_menu', 'my_nav_notitle' );
+
+function print_subnav() { ?>
+	<?php
+	$query = new WP_Query( array(
+		'post_parent' => get_the_ID(),
+		'post_type' => 'page',
+		'orderby' => 'ID',
+		'order' => 'ASC',
+	));
+	if ($query->have_posts()) { ?>
+		<div class="sub_nav">
+			<?php
+			while ($query->have_posts()) : $query->the_post(); ?>
+				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+				<?php
+			endwhile; ?>
+		</div>
+		<?php
+	}
+}

@@ -415,3 +415,9 @@ body > section {
     float: right;
     padding: 0 0 15px 10px;
 }
+.sub_nav a {
+color: white;
+font-weight: normal;
+font-size: 120%;
+margin-right: 20px;
+}

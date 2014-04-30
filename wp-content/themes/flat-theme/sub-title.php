@@ -88,8 +88,8 @@ if (isset($title))
     </div>
     <div class="col-sm-4">');
 	get_search_form();
-	echo('</div>
-    </div>
-    </div>
-    </section>');
+	echo '</div>
+    </div>';
+	print_subnav();
+	echo '</div></section>';
 }
