@@ -34,28 +34,6 @@
             </div>
 
             <div class="hidden-xs">
-                <div class="mas-social-container hidden-sm hidden-md">
-                    <div class="mas-social">
-                        <div><a href="https://twitter.com/MNAstronomy"><img src="<?php echo get_template_directory_uri() ?>/assets/images/twitter.png"/> <span>Twitter</span></a></div>
-                        <div><a href="https://www.facebook.com/MinnesotaAstronomicalSociety"><img src="<?php echo get_template_directory_uri() ?>/assets/images/facebook.png"/> <span>Facebook</span></a></div>
-                    </div>
-                </div>
-                <div class="mas-banner-container hidden-sm">
-                    <div class="mas-banner">
-                        <div class="checkThisEvent">
-                            <?php
-                            if (is_front_page()) {
-                                if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("home_page_event_view") ) :
-                                    dynamic_sidebar( "home_page_event_view" );
-                                endif;
-                            }
-                            ?>
-                        </div>
-                        <div class="join"><a href="/members/join">JOIN</a></div>
-                        <div class="give"><a href="http://givemn.razoo.com/story/Minnesota-Astronomical-Society" target="_blank">GIVE</a></div>
-                    </div>
-                    &nbsp;
-                </div>
                 <?php
                 if ( has_nav_menu( 'primary' ) ) {
                     wp_nav_menu( array(
@@ -68,6 +46,28 @@
                     );
                 }
                 ?>
+                <div class="mas-social-container hidden-sm">
+                    <div class="mas-social">
+                        <div><a href="https://twitter.com/MNAstronomy"><img src="<?php echo get_template_directory_uri() ?>/assets/images/twitter.png"/></a></div>
+                        <div><a href="https://www.facebook.com/MinnesotaAstronomicalSociety"><img src="<?php echo get_template_directory_uri() ?>/assets/images/facebook.png"/></a></div>
+                    </div>
+                </div>
+                <div class="mas-banner-container hidden-sm">
+                    <div class="mas-banner">
+                        <div class="checkThisEvent">
+                            <?php
+                            /*if (is_front_page()) {
+                                if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("home_page_event_view") ) :
+                                    dynamic_sidebar( "home_page_event_view" );
+                                endif;
+                            }*/
+                            ?>
+                        </div>
+                        <div class="join"><a href="/members/join">JOIN</a></div>
+                        <div class="give"><a href="http://givemn.razoo.com/story/Minnesota-Astronomical-Society" target="_blank">GIVE</a></div>
+                    </div>
+                    &nbsp;
+                </div>
             </div>
 
             <div id="mobile-menu" class="visible-xs">

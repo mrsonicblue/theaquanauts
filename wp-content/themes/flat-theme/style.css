@@ -288,7 +288,7 @@ div.aligncenter {
 }
 .navbar .navbar-main {
   margin-top: 20px;
-  float: right;
+  float: left;
 }
 .navbar .navbar-main > li {
   margin-left: 5px;
@@ -1714,7 +1714,8 @@ background-color: #ECF0F1;
 
 }
 .navbar-inverse .navbar-nav>li a{
-    color:#BDC3C7;
+    color:white;
+		font-weight: normal;
     padding: 10px 15px;
     display: block;
 }

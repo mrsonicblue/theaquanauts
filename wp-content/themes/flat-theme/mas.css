@@ -62,7 +62,7 @@ body > section {
 }
 @media (min-width:1200px) {
     .navbar .navbar-main {
-        margin-right: 50px;
+        margin-left:50px;
     }
 }
 
@@ -152,27 +152,32 @@ body > section {
 .mas-banner-container {
     position: relative;
     float: right;
-    width: 239px;
+    width: 171px;
     height: auto;
 }
 .mas-banner {
     position: absolute;
-    width: 239px;
+    width: 100%;
     background-image: url(assets/images/back_ticker.png);
     text-align: center;
     color: white;
     font-weight: bold;
+		background-size: contain;
 }
 .mas-banner > div {
     padding: 5px;
+	padding-bottom: 0px;
 }
 .mas-banner > div.join {
     color: rgb(113, 140, 155);
-    height: 72px;
+    height: 52px;
     background-image: url(assets/images/join_banner.png);
-    font-size: 41px;
-    line-height: 41px;
-    padding-top: 5px;
+    font-size: 30px;
+    padding-top: 0px;
+		background-size: contain;
+		width: 102%;
+		margin-left: -1px;
+		margin-top: 20px;
 }
 .mas-banner > div.join a:link,
 .mas-banner > div.join a:active,
@@ -181,9 +186,9 @@ body > section {
     color: #708C9C;
 }
 .mas-banner > div.give {
-    height: 60px;
-    font-size: 41px;
-    line-height: 41px;
+    height: 48px;
+    font-size: 30px;
+    line-height: 30px;
 }
 .mas-banner > div.give a:link,
 .mas-banner > div.give a:active,
@@ -256,7 +261,7 @@ body > section {
 }
 .mas-social-container {
     float: right;
-    width: 150px;
+    width: 70px;
 }
 .mas-social {
     margin: 20px 0 0 20px;
