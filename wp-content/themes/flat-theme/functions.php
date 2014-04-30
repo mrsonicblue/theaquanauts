@@ -1417,7 +1417,7 @@ function print_subnav() { ?>
 			while ($query->have_posts()) : $query->the_post(); ?>
 				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 				<?php
-			endwhile; ?>
+			endwhile; wp_reset_postdata(); ?>
 		</div>
 		<?php
 	}

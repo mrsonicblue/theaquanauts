@@ -96,6 +96,19 @@ $total_sliders = count($sliders);
                 <?php } // endforeach ?>
 
             </div><!--/.carousel-inner-->
+				<!--<div class="upcoming_events">
+					<div class="title">Upcoming Events</div>
+					<?php
+					$query = new WP_Query(array(
+						'post_type' => 'ai1ec_event',
+						'posts_per_page' => 3
+					));
+					while ($query->have_posts()): $query->the_post(); ?>
+						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+						<br />
+						<?php
+					endwhile; ?>
+				</div>-->
         </div><!--/.carousel-->
         <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
             <i class="icon-angle-left"></i>
